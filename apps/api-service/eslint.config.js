@@ -1,13 +1,9 @@
-// const eslint = require("@eslint/js");
-// const globals = require("globals");
-// const tseslint = require("typescript-eslint");
-// const eslintConfigPrettier = require("eslint-config-prettier");
-// const serviceConfig = require("@sophist/eslint-config")
-import eslintConfigPrettier from "eslint-config-prettier";
-import globals from "globals";
-import tseslint from "typescript-eslint";
+const eslint = require("@eslint/js");
+const globals = require("globals");
 
-import eslint from "@eslint/js";
+const tseslint = require("typescript-eslint");
+
+const eslintConfigPrettier = require("eslint-config-prettier");
 
 module.exports = [
   {
@@ -32,12 +28,12 @@ module.exports = [
         tsconfigRootDir: __dirname,
       },
     },
-    // Rules
     rules: {
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-floating-promises": "off",
     },
   },
 ];
