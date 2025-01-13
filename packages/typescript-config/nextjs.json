@@ -16,7 +16,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", ".next"]
