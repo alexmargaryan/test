@@ -28,7 +28,8 @@
     "rxjs": "^7.8.1"
   },
   "devDependencies": {
-    "@sophist/typescript-config": "workspace:*",
+    "@s-test/typescript-config": "workspace:*",
+    "@s-test/database": "workspace:*",
     "@eslint/js": "^9.17.0",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",

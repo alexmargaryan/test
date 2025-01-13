@@ -1,5 +1,5 @@
 {
-  "name": "sophist",
+  "name": "s-test",
   "private": true,
   "scripts": {
     "build": "turbo build",

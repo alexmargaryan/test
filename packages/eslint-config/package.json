@@ -1,5 +1,5 @@
 {
-  "name": "@sophist/eslint-config",
+  "name": "@s-test/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,

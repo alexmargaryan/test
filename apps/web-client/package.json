@@ -17,8 +17,8 @@
     "next": "15.1.4"
   },
   "devDependencies": {
-    "@sophist/eslint-config": "workspace:*",
-    "@sophist/typescript-config": "workspace:*",
+    "@s-test/eslint-config": "workspace:*",
+    "@s-test/typescript-config": "workspace:*",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",

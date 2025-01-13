@@ -1,5 +1,5 @@
 {
-  "extends": "@sophist/typescript-config/nextjs.json",
+  "extends": "@s-test/typescript-config/nextjs.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

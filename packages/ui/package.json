@@ -1,5 +1,5 @@
 {
-  "name": "@sophist/ui",
+  "name": "@s-test/ui",
   "version": "0.0.0",
   "type": "module",
   "private": true,
@@ -14,8 +14,8 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@sophist/eslint-config": "workspace:*",
-    "@sophist/typescript-config": "workspace:*",
+    "@s-test/eslint-config": "workspace:*",
+    "@s-test/typescript-config": "workspace:*",
     "@turbo/gen": "^1.12.4",
     "@types/node": "^20.11.24",
     "@types/react": "18.3.0",

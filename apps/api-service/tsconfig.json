@@ -1,5 +1,5 @@
 {
-  "extends": "@sophist/typescript-config/node.json",
+  "extends": "@s-test/typescript-config/node.json",
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist",
