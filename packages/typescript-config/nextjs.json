@@ -15,7 +15,6 @@
     "moduleDetection": "force",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "preserveSymlinks": false,
