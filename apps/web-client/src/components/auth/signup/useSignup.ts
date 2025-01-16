@@ -5,7 +5,7 @@ import { useForm, UseFormReturn } from "react-hook-form";
 import { useAuthControllerSignup } from "@/api/generated/queries";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { SignupSchema } from "./signup.schema";
+import { SignupSchema } from "./signupSchema";
 import { SignupForm } from "./types";
 
 interface UseSignupReturn {

@@ -1,5 +1,5 @@
 import { z } from "zod";
 
-import { SignupSchema } from "./signup.schema";
+import { SignupSchema } from "./signupSchema";
 
 export type SignupForm = z.infer<typeof SignupSchema>;

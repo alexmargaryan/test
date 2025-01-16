@@ -1,5 +1,5 @@
-import SigninForm from "@/components/auth/signin/signin-form";
-import SigninGoogleForm from "@/components/auth/signin/signin-google-form";
+import SigninForm from "@/components/auth/signin/SigninForm";
+import SigninGoogleForm from "@/components/auth/signin/SigninGooglForm";
 
 export default function Signin() {
   return (

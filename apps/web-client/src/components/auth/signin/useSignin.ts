@@ -9,7 +9,7 @@ import { useAuthControllerSignin } from "@/api/generated/queries";
 import { ApiError } from "@/api/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { SigninSchema } from "./signin.schema";
+import { SigninSchema } from "./signinSchema";
 import { SigninForm } from "./types";
 
 interface UseSigninReturn {

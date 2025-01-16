@@ -11,14 +11,48 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
-import useSignin from "./signin.hook";
+import useSignup from "./useSignup";
 
-const SigninForm = () => {
-  const { form, isPending, error, onSubmit } = useSignin();
+const SignupForm = () => {
+  const { form, isPending, onSubmit } = useSignup();
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <FormField
+          control={form.control}
+          name="firstName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>First Name</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="First Name"
+                  autoComplete="given-name"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="lastName"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Last Name</FormLabel>
+              <FormControl>
+                <Input
+                  placeholder="Last Name"
+                  autoComplete="family-name"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="email"
@@ -42,7 +76,7 @@ const SigninForm = () => {
                 <Input
                   type="password"
                   placeholder="Password"
-                  autoComplete="current-password"
+                  autoComplete="new-password"
                   {...field}
                 />
               </FormControl>
@@ -50,17 +84,12 @@ const SigninForm = () => {
             </FormItem>
           )}
         />
-        {error && (
-          <div className="text-red-500 text-sm">
-            {error.response?.data.message ?? "Something went wrong"}
-          </div>
-        )}
         <Button type="submit" className="w-full">
-          {isPending ? "Loading..." : "Sign In"}
+          {isPending ? "Loading..." : "Sign Up"}
         </Button>
       </form>
     </Form>
   );
 };
 
-export default SigninForm;
+export default SignupForm;
