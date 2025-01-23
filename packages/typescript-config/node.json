@@ -1,10 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node",
-  "extends": "./base.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "moduleResolution": "node",
+    "target": "es2022",
     "lib": ["ES2022"],
     "skipLibCheck": true,
 
@@ -15,6 +14,7 @@
     "sourceMap": true,
 
     "declaration": true,
+    "incremental": true,
     "strictNullChecks": false,
     "noImplicitAny": false,
     "strictBindCallApply": false,
